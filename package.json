@@ -10,5 +10,8 @@
     "cvr"
   ],
   "author": "Sander Larsen",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "minify": "^9.1.0"
+  }
 }
