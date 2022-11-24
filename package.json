@@ -1,0 +1,14 @@
+{
+  "name": "cvrmagic",
+  "version": "0.1.0",
+  "description": "A script that let's you pull company info for companies registered in Denmark, made for Dandomain webshops.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cvr"
+  ],
+  "author": "Sander Larsen",
+  "license": "ISC"
+}
