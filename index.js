@@ -15,6 +15,7 @@ class CvrMagic {
 
             this.fetchCvrData(number)
                 .then((data) => {
+                    console.log(`Retreived company data: ${data}`)
                     this.fillForm(data)
                 })
         })
