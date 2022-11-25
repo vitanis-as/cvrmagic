@@ -3,7 +3,7 @@ class CvrMagic {
         this.inputs = {
             cvr: document.querySelector(`${formSelector} ${inputSelector}`)
         }
-        discoverInputs(formId)
+        this.discoverInputs(formId)
 
         // Listen for changes to the cvr input value.
         this.inputs.cvr.addEventListener("change", (event) => {
