@@ -9,7 +9,9 @@ class CvrMagic {
         this.inputs.cvr.addEventListener("change", (event) => {
             // Validate new value before fetching data.
             let number = event.target.value.trim()
-            if (number.length != 8) return
+            if (number.length != 8) {
+                return
+            }
 
             fetchCvrData(number)
                 .then((data) => {
