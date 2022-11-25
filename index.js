@@ -13,9 +13,9 @@ class CvrMagic {
                 return
             }
 
-            fetchCvrData(number)
+            this.fetchCvrData(number)
                 .then((data) => {
-                    fillForm(data)
+                    this.fillForm(data)
                 })
         })
     }
