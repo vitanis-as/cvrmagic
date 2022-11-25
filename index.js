@@ -6,8 +6,12 @@ class CvrMagic {
         discoverInputs(formId)
 
         // Listen for changes to the cvr input value.
-        this.inputs.cvr.addEventListener("change", (e) => {
-            fetchCvrData(e.value)
+        this.inputs.cvr.addEventListener("change", (event) => {
+            // Validate new value before fetching data.
+            let number = event.target.value.trim()
+            if (number.length != 8) return
+
+            fetchCvrData(number)
                 .then((data) => {
                     fillForm(data)
                 })
