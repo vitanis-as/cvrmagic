@@ -23,7 +23,7 @@ class CvrMagic {
 
     fetchCvrData(cvr) {
         return fetch(`https://cvrapi.dk/api?search=${cvr}&country=dk`)
-            .then((res) => JSON.parse(res))
+            .then((response) => response.json())
             .catch((error) => {
                 console.log(`Couldn't fetch company data from CVR: ${error}`)
             })
